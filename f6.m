@@ -8,9 +8,9 @@ end
 tc1_f6 = T_f6(1,:,:);                                           tc2_f6 = T_f6(:,1,:);           
 
 
-for i = 1:length(D1_f6)
-    D2_f6 = D1_f6(i);
-    b1_f6 = D1_f6(i)^2.7;             b2_f6 = D2_f6^2.7;
+for i = 1:length(d1_f6)
+    d2_f6 = d1_f6(i);
+    b1_f6 = d1_f6(i)^2.7;             b2_f6 = d2_f6^2.7;
     
     E1_f6 = u1*z1*tc1_f6.*Pc/b1_f6;                                  E2_f6 = u2*z2*tc2_f6.*Pc/b2_f6;      %b1、b2是论文中D^2.7  
     for j = 1:max(size(tr1))
@@ -21,7 +21,7 @@ for i = 1:length(D1_f6)
     end
     gamma1_f6 = Pr1_f6.*z1./(b1_f6*(Pn+h1*Pc));                      gamma2_f6 = Pr2_f6.*z2./(b2_f6*(Pn+h2*Pc));
     
-    r1_f6 = d*Ts./tr1;                                            r2_f6 = d*Ts./tr2;         % coding rate
+    r1_f6 = D*Ts./tr1;                                            r2_f6 = D*Ts./tr2;         % coding rate
     r1_f6 = (repmat(r1_f6,max(size(tr1)),1))';                    r2_f6 = (repmat(r2_f6,max(size(tr2)),1));
     r1_f6 = repmat(r1_f6,[1 1 length(tr1)]);                      r2_f6 = repmat(r2_f6,[1 1 length(tr2)]);
     n1_f6 = tr1./Ts;                                              n2_f6 = tr2./Ts;           % blocklength 

@@ -23,7 +23,7 @@ end
 
 gamma1_f1 = Pr1_f1.*z1./(b1*(Pn+h1*Pc));                      gamma2_f1 = Pr2_f1.*z2./(b2*(Pn+h2*Pc));
 
-r1_f1 = d*Ts./tr1_f1;                                         r2_f1 = d*Ts./tr2_f1;         % coding rate
+r1_f1 = D*Ts./tr1_f1;                                         r2_f1 = D*Ts./tr2_f1;         % coding rate
 r1_f1 = (repmat(r1_f1,max(size(tr1_f1)),1))';                 r2_f1 = (repmat(r2_f1,max(size(tr2_f1)),1));
 n1_f1 = tr1_f1./Ts;                                           n2_f1 = tr2_f1./Ts;           % blocklength 
 n1_f1 = (repmat(n1_f1,max(size(tr1_f1)),1))';                 n2_f1 = (repmat(n2_f1,max(size(tr2_f1)),1));

@@ -19,7 +19,7 @@ h1_f5 = [0:0.5:15];
 run f5.m;
 
 run parameters_f1_5.m;
-D1_f6 = 0:0.1:20;
+d1_f6 = 0:0.1:20;
 run f6.m;
 
 run plot_figure.m;

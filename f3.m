@@ -12,7 +12,7 @@ E1_f3 = u1*z1*tc1_f3.*Pc/b1;                               E2_f3 = u2*z2*tc2_f3.
 Pr1_f3 = E1_f3./tr1_f3;                                    Pr2_f3 = E2_f3./tr2_f3;
 gamma1_f3 = Pr1_f3.*z1./(b1*(Pn+h1*Pc));                   gamma2_f3 = Pr2_f3.*z2./(b2*(Pn+h2*Pc));
 
-r1_f3 = d*Ts./tr1_f3;                                      r2_f3 = d*Ts./tr2_f3;         % coding rate
+r1_f3 = D*Ts./tr1_f3;                                      r2_f3 = D*Ts./tr2_f3;         % coding rate
 n1_f3 = tr1_f3./Ts;                                        n2_f3 = tr2_f3./Ts;           % blocklength 
 C1_f3 = log2(1+gamma1_f3);                                 C2_f3 = log2(1+gamma2_f3);    % Shannon capacity
 V1_f3 = (2*gamma1_f3+gamma1_f3.^2)./(1+gamma1_f3).^2;      V2_f3 = (2*gamma2_f3+gamma2_f3.^2)./(1+gamma2_f3).^2;
@@ -30,7 +30,7 @@ E1_f3 = u1*z1*tc1_f3.*Pc/b1;                                  E2_f3 = u2*z2*tc2_
 Pr1_f3 = E1_f3./tr1_f3;                                          Pr2_f3 = E2_f3./tr2_f3;
 gamma1_f3 = Pr1_f3.*z1./(b1*(Pn+h1*Pc));                      gamma2_f3 = Pr2_f3.*z2./(b2*(Pn+h2*Pc));
 
-r1_f3 = d*Ts./tr1_f3;                                         r2_f3 = d*Ts./tr2_f3;         % coding rate
+r1_f3 = D*Ts./tr1_f3;                                         r2_f3 = D*Ts./tr2_f3;         % coding rate
 n1_f3 = tr1_f3./Ts;                                           n2_f3 = tr2_f3./Ts;           % blocklength 
 C1_f3 = log2(1+gamma1_f3);                                    C2_f3 = log2(1+gamma2_f3);    % Shannon capacity
 V1_f3 = (2*gamma1_f3+gamma1_f3.^2)./(1+gamma1_f3).^2;               V2_f3 = (2*gamma2_f3+gamma2_f3.^2)./(1+gamma2_f3).^2;
@@ -49,7 +49,7 @@ E1_f3 = u1*z1*tc1_f3.*Pc/b1;                                  E2_f3 = u2*z2*tc2_
 Pr1_f3 = E1_f3./tr1_f3;                                          Pr2_f3 = E2_f3./tr2_f3;
 gamma1_f3 = Pr1_f3.*z1./(b1*(Pn+h1*Pc));                      gamma2_f3 = Pr2_f3.*z2./(b2*(Pn+h2*Pc));
 
-r1_f3 = d*Ts./tr1_f3;                                         r2_f3 = d*Ts./tr2_f3;         % coding rate
+r1_f3 = D*Ts./tr1_f3;                                         r2_f3 = D*Ts./tr2_f3;         % coding rate
 n1_f3 = tr1_f3./Ts;                                           n2_f3 = tr2_f3./Ts;           % blocklength 
 C1_f3 = log2(1+gamma1_f3);                                    C2_f3 = log2(1+gamma2_f3);    % Shannon capacity
 V1_f3 = (2*gamma1_f3+gamma1_f3.^2)./(1+gamma1_f3).^2;               V2_f3 = (2*gamma2_f3+gamma2_f3.^2)./(1+gamma2_f3).^2;

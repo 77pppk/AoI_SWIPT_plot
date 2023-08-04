@@ -14,7 +14,7 @@ for j = 1:length(h1_f4)
     end
     gamma1_f4 = Pr1_f4.*z1_f4./(b1*(Pn+h1_f4(j)*Pc));                   gamma2_f4 = Pr2_f4.*z2_f4./(b2*(Pn+h2_f4*Pc));
     
-    r1_f4 = d*Ts./tr1;                                            r2_f4 = d*Ts./tr2;         % coding rate
+    r1_f4 = D*Ts./tr1;                                            r2_f4 = D*Ts./tr2;         % coding rate
     r1_f4 = (repmat(r1_f4,max(size(tr1)),1))';                    r2_f4 = (repmat(r2_f4,max(size(tr2)),1));
     r1_f4 = repmat(r1_f4,[1 1 length(tr1)]);                      r2_f4 = repmat(r2_f4,[1 1 length(tr2)]);    
     n1_f4 = tr1./Ts;                                              n2_f4 = tr2./Ts;           % blocklength 
@@ -46,7 +46,7 @@ for j = 1:length(h1_f4)
     end
     gamma1_f4 = Pr1_f4.*z1_f4./(b1*(Pn+h1_f4(j)*Pc));                   gamma2_f4 = Pr2_f4.*z2_f4./(b2*(Pn+h2_f4*Pc));
     
-    r1_f4 = d*Ts./tr1;                                         r2_f4 = d*Ts./tr2;         % coding rate
+    r1_f4 = D*Ts./tr1;                                         r2_f4 = D*Ts./tr2;         % coding rate
     r1_f4 = (repmat(r1_f4,max(size(tr1)),1))';                    r2_f4 = (repmat(r2_f4,max(size(tr2)),1));
     r1_f4 = repmat(r1_f4,[1 1 length(tr1)]);                      r2_f4 = repmat(r2_f4,[1 1 length(tr2)]);
     n1_f4 = tr1./Ts;                                           n2_f4 = tr2./Ts;           % blocklength 
@@ -79,7 +79,7 @@ for j = 1:length(h1_f4)
     end
     gamma1_f4 = Pr1_f4.*z1_f4./(b1*(Pn+h1_f4(j)*Pc));                   gamma2_f4 = Pr2_f4.*z2_f4./(b2*(Pn+h2_f4*Pc));
     
-    r1_f4 = d*Ts./tr1;                                         r2_f4 = d*Ts./tr2;         % coding rate
+    r1_f4 = D*Ts./tr1;                                         r2_f4 = D*Ts./tr2;         % coding rate
     r1_f4 = (repmat(r1_f4,max(size(tr1)),1))';                    r2_f4 = (repmat(r2_f4,max(size(tr2)),1));
     r1_f4 = repmat(r1_f4,[1 1 length(tr1)]);                      r2_f4 = repmat(r2_f4,[1 1 length(tr2)]);
     n1_f4 = tr1./Ts;                                           n2_f4 = tr2./Ts;           % blocklength 
@@ -110,7 +110,7 @@ for j = 1:length(h1_f4)
     end
     gamma1_f4 = Pr1_f4.*z1_f4./(b1*(Pn+h1_f4(j)*Pc));                   gamma2_f4 = Pr2_f4.*z2_f4./(b2*(Pn+h2_f4*Pc));
     
-    r1_f4 = d*Ts./tr1;                                         r2_f4 = d*Ts./tr2;         % coding rate
+    r1_f4 = D*Ts./tr1;                                         r2_f4 = D*Ts./tr2;         % coding rate
     r1_f4 = (repmat(r1_f4,max(size(tr1)),1))';                    r2_f4 = (repmat(r2_f4,max(size(tr2)),1));
     r1_f4 = repmat(r1_f4,[1 1 length(tr1)]);                      r2_f4 = repmat(r2_f4,[1 1 length(tr2)]);
     n1_f4 = tr1./Ts;                                           n2_f4 = tr2./Ts;           % blocklength 
@@ -141,7 +141,7 @@ for j = 1:length(h1_f4)
     end
     gamma1_f4 = Pr1_f4.*z1_f4./(b1*(Pn+h1_f4(j)*Pc));                   gamma2_f4 = Pr2_f4.*z2_f4./(b2*(Pn+h2_f4*Pc));
     
-    r1_f4 = d*Ts./tr1;                                         r2_f4 = d*Ts./tr2;         % coding rate
+    r1_f4 = D*Ts./tr1;                                         r2_f4 = D*Ts./tr2;         % coding rate
     r1_f4 = (repmat(r1_f4,max(size(tr1)),1))';                    r2_f4 = (repmat(r2_f4,max(size(tr2)),1));
     r1_f4 = repmat(r1_f4,[1 1 length(tr1)]);                      r2_f4 = repmat(r2_f4,[1 1 length(tr2)]);
     n1_f4 = tr1./Ts;                                           n2_f4 = tr2./Ts;           % blocklength 
@@ -171,7 +171,7 @@ for j = 1:length(h1_f4)
     end
     gamma1_f4 = Pr1_f4.*z1_f4./(b1*(Pn+h1_f4(j)*Pc));                   gamma2_f4 = Pr2_f4.*z2_f4./(b2*(Pn+h2_f4*Pc));
     
-    r1_f4 = d*Ts./tr1;                                         r2_f4 = d*Ts./tr2;         % coding rate
+    r1_f4 = D*Ts./tr1;                                         r2_f4 = D*Ts./tr2;         % coding rate
     r1_f4 = (repmat(r1_f4,max(size(tr1)),1))';                    r2_f4 = (repmat(r2_f4,max(size(tr2)),1));
     r1_f4 = repmat(r1_f4,[1 1 length(tr1)]);                      r2_f4 = repmat(r2_f4,[1 1 length(tr2)]);
     n1_f4 = tr1./Ts;                                           n2_f4 = tr2./Ts;           % blocklength 

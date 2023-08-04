@@ -8,18 +8,18 @@ xlabel('tr2');ylabel('tr1');zlabel('max');title('h1 = h2');
 
 figure(2);
 subplot(3,1,1);
-plot(d_f2,mAOI1_t_f2,'*');hold on;
-plot(d_f2,mAOI1_f2);
-xlabel('d');ylabel('max AOI*');
+plot(D_f2,mAOI1_t_f2,'*');hold on;
+plot(D_f2,mAOI1_f2);
+xlabel('D');ylabel('max AOI*');
 legend('with threshold','without');title('h1 = h2 = 8');
 subplot(3,1,2);
-plot(d_f2,mAOI2_t_f2,'*');hold on;
-plot(d_f2,mAOI2_f2);
-xlabel('d');ylabel('max AOI*');
+plot(D_f2,mAOI2_t_f2,'*');hold on;
+plot(D_f2,mAOI2_f2);
+xlabel('D');ylabel('max AOI*');
 legend('with threshold','without');title('h1(8) > h2(7)');
 subplot(3,1,3);
-plot(d_f2,mAOI3_t_f2,'*');hold on;
-plot(d_f2,mAOI3_f2);
+plot(D_f2,mAOI3_t_f2,'*');hold on;
+plot(D_f2,mAOI3_f2);
 legend('with threshold','without');title('h1(8) > h2(6)');
 
 
@@ -85,8 +85,8 @@ ylabel('its max error');
 
 figure(6);
 yyaxis left
-plot(D1_f6,TC);
+plot(d1_f6,TC);
 xlabel('distance');ylabel('tc');
 yyaxis right
-plot(D1_f6,minAOI_f6);
+plot(d1_f6,minAOI_f6);
 ylabel('minAOI');

@@ -19,7 +19,7 @@ for j = 1:length(h1_f5)
     end
     gamma1_f5 = Pr1_f5.*z1_f5./(b1*(Pn+h1_f5(j)*Pc));                   gamma2_f5 = Pr2_f5.*z2_f5./(b2*(Pn+h2_f5*Pc));
     
-    r1_f5 = d*Ts./tr1;                                            r2_f5 = d*Ts./tr2;         % coding rate
+    r1_f5 = D*Ts./tr1;                                            r2_f5 = D*Ts./tr2;         % coding rate
     r1_f5 = (repmat(r1_f5,max(size(tr1)),1))';                    r2_f5 = (repmat(r2_f5,max(size(tr2)),1));
     r1_f5 = repmat(r1_f5,[1 1 length(tr1)]);                      r2_f5 = repmat(r2_f5,[1 1 length(tr2)]);
     n1_f5 = tr1./Ts;                                              n2_f5 = tr2./Ts;           % blocklength 
@@ -63,7 +63,7 @@ for j = 1:length(h1_f5)
     end
     gamma1_f5 = Pr1_f5.*z1_f5./(b1*(Pn+h1_f5(j)*Pc));                   gamma2_f5 = Pr2_f5.*z2_f5./(b2*(Pn+h2_f5*Pc));
     
-    r1_f5 = d*Ts./tr1;                                         r2_f5 = d*Ts./tr2;         % coding rate
+    r1_f5 = D*Ts./tr1;                                         r2_f5 = D*Ts./tr2;         % coding rate
     r1_f5 = (repmat(r1_f5,max(size(tr1)),1))';                    r2_f5 = (repmat(r2_f5,max(size(tr2)),1));
     r1_f5 = repmat(r1_f5,[1 1 length(tr1)]);                      r2_f5 = repmat(r2_f5,[1 1 length(tr2)]);
     n1_f5 = tr1./Ts;                                           n2_f5 = tr2./Ts;           % blocklength 
